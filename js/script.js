@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             title: 'Emulador Chip-8 en C++',
-            description: 'Desarrollo de un emulador de Chip-8 en C++ utilizando la librería SFML para la gestión de gráficos y entrada. Este proyecto abarca la implementación completa de la arquitectura Chip-8, incluyendo el procesamiento de opcodes, manejo de memoria, registros y la sincronización precisa de la CPU y los temporizadores para una emulación fiel. Se abordaron desafíos clave como la optimización del rendimiento para evitar la ejecución excesivamente rápida o lenta, y la gestiónde la entrada del usuario. Adicionalmente, se exploró un prototipo para Raspberry Pi Pico, demostrando adaptabilidad adiferentes plataformas.',
+            description: 'Desarrollo de un emulador de Chip-8 en C++ utilizando la librería SFML para la gestión de gráficos y entrada. Este proyecto abarca la implementación completa de la arquitectura Chip-8, incluyendo el procesamiento de opcodes, manejo de memoria, registros y la sincronización precisa de la CPU y los temporizadores para una emulación fiel. Se abordaron desafíos clave como la optimización del rendimiento para evitar la ejecución excesivamente rápida o lenta, y la gestión de la entrada del usuario. Adicionalmente, se exploró un prototipo para Raspberry Pi Pico, demostrando adaptabilidad adiferentes plataformas.',
             media: 'assets/images/chip8.png',
             type: 'image',
             link: 'https://github.com/isaigm/chip8-pi-pico'
