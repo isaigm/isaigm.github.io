@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         },
         {
-            title: 'Implementación del paper Imaging time-series to improve classification and imputatio',
+            title: 'Implementación del paper Imaging time-series to improve classification and imputation',
             description: 'Se reprodujo el enfoque del artículo utilizando el conjunto de datos GunPoint. Se convirtieron las series temporales en imágenes utilizando Gramian Angular Summation Field (GASF), y luego se entrenaron redes neuronales convolucionales (CNN) para la clasificación. El objetivo es determinar si la persona está apuntando con un arma o solo con su dedo.',
             media: 'assets/images/GunPoint.png',
             type: 'image',
