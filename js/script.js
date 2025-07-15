@@ -7,14 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Este proyecto es un clon del primer juego que jugué. Lo desarrollé usando un Entity Component System desde cero con C++ y SFML.',
             media: 'assets/images/zeek-the-geek.png',
             type: 'image',
-            link: 'https://github.com/isaigm/zeek-the-geek' 
+            link: 'https://github.com/isaigm/zeek-the-geek'
         },
         {
             title: 'Analizador de espectro',
             description: 'Un simple analizador de espectro hecho con C++, SFML, ImGui y FFTW.',
             media: 'assets/videos/spectrum.mp4',
             type: 'video',
-            link: 'https://github.com/isaigm/music-visualizer-sfml' 
+            link: 'https://github.com/isaigm/music-visualizer-sfml'
         },
         {
             title: 'Implementación de algoritmo C4.5',
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             media: 'assets/images/symptom-checker.png',
             type: 'image',
             link: 'https://github.com/isaigm/symptom-checker'
-            
+
 
         },
         {
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Encontré un error dentro de la arquitectura propuesta, por lo que decicidí usar transfer learning obteniendo buenos resultados. 83-87% de precisión en el dataset original.',
             media: 'assets/images/scarnet.jpeg',
             type: 'image',
-            link: 'https://github.com/isaigm/scarnet' 
+            link: 'https://github.com/isaigm/scarnet'
         },
         {
             title: 'Implementación del paper CrimeKGQA: A Crime Investigation System Based on Retrieval-Augmented Generation and Knowledge Graphs',
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
             media: 'assets/videos/demo.mp4',
             type: 'video',
             link: 'https://github.com/isaigm/CrimeKGQA'
-            
+
         },
         {
             title: 'Implementación del paper Imaging time-series to improve classification and imputatio',
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             media: 'assets/images/GunPoint.png',
             type: 'image',
             link: 'https://github.com/isaigm/time-series-classifier'
-            
+
         },
         {
             title: 'Emulador Chip-8 en C++',
@@ -61,7 +61,15 @@ document.addEventListener('DOMContentLoaded', () => {
             media: 'assets/images/chip8.png',
             type: 'image',
             link: 'https://github.com/isaigm/chip8-pi-pico'
-            
+
+        },
+        {
+            title: 'Emulador Intel 8080 en C++',
+            description: 'Desarrollo de un emulador del Intel 8080 en C++. Este proyecto fue más complicado que el Chip-8, ya que el Intel 8080 fue un procesador real, tiene muchas más instrucciones, más memoria RAM, más registros, etc.',
+            media: 'assets/videos/i8080.mp4',
+            type: 'video',
+            link: 'https://github.com/isaigm/8080_emu'
+
         },
     ];
 
@@ -80,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mediaElement = document.createElement('video');
             mediaElement.src = project.media;
             mediaElement.controls = true;
-            mediaElement.autoplay = false; 
+            mediaElement.autoplay = false;
             mediaElement.loop = true;
             mediaElement.muted = true;
         }
