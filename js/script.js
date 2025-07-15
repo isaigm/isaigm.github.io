@@ -44,7 +44,15 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Repliqué completamente el sistema descrito en el artículo, reemplazando GPT-4o por Claude 3.7 como el modelo de lenguaje principal. Combiné RAG y grafos de conocimiento para responder preguntas complejas sobre crímenes cometidos en Manchester.',
             media: 'assets/videos/demo.mp4',
             type: 'video',
-            link: 'https://github.com/isaigm/scarnet'
+            link: 'https://github.com/isaigm/CrimeKGQA'
+            
+        },
+        {
+            title: 'Implementación del paper Imaging time-series to improve classification and imputatio',
+            description: 'Se reprodujo el enfoque del artículo utilizando el conjunto de datos GunPoint. Se convirtieron las series temporales en imágenes utilizando Gramian Angular Summation Field (GASF), y luego se entrenaron redes neuronales convolucionales (CNN) para la clasificación. El objetivo es determinar si la persona está apuntando con un arma o solo con su dedo.',
+            media: 'assets/images/GunPoint.png',
+            type: 'image',
+            link: 'https://github.com/isaigm/time-series-classifier'
             
         },
         {
