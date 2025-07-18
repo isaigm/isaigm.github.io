@@ -33,12 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         },
         {
-    title: 'Análisis Comparativo y Modelo Optimizado para la Clasificación de Cicatrices de Acné',
-    description: 'Este proyecto inició como un estudio de replicación del paper "ScarNet". Durante la implementación, se detectaron desafíos metodológicos, incluyendo una arquitectura irreproducible y un alto riesgo de fuga de datos (data leakage) en la estrategia de aumentación propuesta. Como respuesta, se desarrolló y validó un enfoque alternativo basado en Transfer Learning con una ResNet18. La estrategia final, que incluye la fusión de clases visualmente similares (Boxcar y Rolling), aumentos de datos avanzados con RandAugment y un fine-tuning progresivo, alcanzó una precisión final del 84.4% en el dataset completo, demostrando ser una solución más robusta y fiable.',
-    media: 'assets/images/scarnet.jpeg',
-    type: 'image',
-    link: 'https://github.com/isaigm/scarnet'
-},
+        title: 'Clasificación de Cicatrices de Acné: Un Estudio de Validación Rigurosa',
+        description: 'Este proyecto inició como un estudio de replicación del paper "ScarNet". Tras identificar desafíos de reproducibilidad, desarrollé una solución superior con Transfer Learning (ResNet18). Para obtener una medida de rendimiento robusta y eliminar el sesgo de una "división afortunada", implementé Validación Cruzada (K-Fold), alcanzando una precisión promedio final de 64.4% ± 5.85%. Este resultado representa una evaluación honesta y científicamente rigurosa del rendimiento del modelo en un dataset limitado y complejo.',
+        media: 'assets/images/scarnet.jpeg',
+        type: 'image',
+        link: 'https://github.com/isaigm/scarnet'
+        },
         {
             title: 'Implementación del paper CrimeKGQA: A Crime Investigation System Based on Retrieval-Augmented Generation and Knowledge Graphs',
             description: 'Repliqué completamente el sistema descrito en el artículo, reemplazando GPT-4o por Claude 3.7 como el modelo de lenguaje principal. Combiné RAG y grafos de conocimiento para responder preguntas complejas sobre crímenes cometidos en Manchester.',
