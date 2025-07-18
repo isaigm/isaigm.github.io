@@ -33,12 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         },
         {
-            title: 'Implementación del paper ScarNet: Development and Validation of a Novel Deep CNN Model for Acne Scar Classification With a New Dataset',
-            description: 'Encontré un error dentro de la arquitectura propuesta, por lo que decicidí usar transfer learning obteniendo buenos resultados. 83-87% de precisión en el dataset original.',
-            media: 'assets/images/scarnet.jpeg',
-            type: 'image',
-            link: 'https://github.com/isaigm/scarnet'
-        },
+    title: 'Análisis Comparativo y Modelo Optimizado para la Clasificación de Cicatrices de Acné',
+    description: 'Este proyecto inició como un estudio de replicación del paper "ScarNet". Durante la implementación, se detectaron desafíos metodológicos, incluyendo una arquitectura irreproducible y un alto riesgo de fuga de datos (data leakage) en la estrategia de aumentación propuesta. Como respuesta, se desarrolló y validó un enfoque alternativo basado en Transfer Learning con una ResNet18. La estrategia final, que incluye la fusión de clases visualmente similares (Boxcar y Rolling), aumentos de datos avanzados con RandAugment y un fine-tuning progresivo, alcanzó una precisión final del 84.4% en el dataset completo, demostrando ser una solución más robusta y fiable.',
+    media: 'assets/images/scarnet.jpeg',
+    type: 'image',
+    link: 'https://github.com/isaigm/scarnet'
+},
         {
             title: 'Implementación del paper CrimeKGQA: A Crime Investigation System Based on Retrieval-Augmented Generation and Knowledge Graphs',
             description: 'Repliqué completamente el sistema descrito en el artículo, reemplazando GPT-4o por Claude 3.7 como el modelo de lenguaje principal. Combiné RAG y grafos de conocimiento para responder preguntas complejas sobre crímenes cometidos en Manchester.',
