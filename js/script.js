@@ -29,8 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
             media: 'assets/images/symptom-checker.png',
             type: 'image',
             link: 'https://github.com/isaigm/symptom-checker'
-
-
         },
         {
         title: 'Clasificación de Cicatrices de Acné: Un Estudio de Validación Rigurosa',
@@ -54,6 +52,13 @@ document.addEventListener('DOMContentLoaded', () => {
             type: 'image',
             link: 'https://github.com/isaigm/time-series-classifier'
 
+        },
+        {
+            title: "Implementación del paper Rediscovering orbital mechanics with machine learning",
+            description: "Repliqué con asistencia de Gemini 2.5 Pro el paper escrito por Lemos, Jeffrey, Cranmer et al, usando datos sintéticos generados a partir de una simulación. El objetivo del paper era deducir la ley de gravitación universal de Newton. Más detalles en el repositorio de github.",
+            media: "assets/images/imagen1_comparacion_orbitas.png",
+            type: "image",
+            link: "https://github.com/isaigm/rediscovering-orbital-mechanics-with-ml"
         },
         {
             title: 'Emulador Chip-8 en C++',
