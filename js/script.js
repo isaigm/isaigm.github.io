@@ -1,82 +1,84 @@
 // js/script.js
 
 document.addEventListener('DOMContentLoaded', () => {
-    const projects = [
+     const projects = [
         {
-            title: 'Clon de Zeek the Geek',
-            description: 'Este proyecto es un clon del primer juego que jugué. Lo desarrollé usando un Entity Component System desde cero con C++ y SFML.',
+            title: 'Zeek the Geek Clone',
+            description: 'This project is a clone of the first game I ever played. I developed it using a custom Entity Component System from scratch with C++ and SFML.',
             media: 'assets/images/zeek-the-geek.png',
             type: 'image',
             link: 'https://github.com/isaigm/zeek-the-geek'
         },
         {
-            title: 'Analizador de espectro',
-            description: 'Un simple analizador de espectro hecho con C++, SFML, ImGui y FFTW.',
+            title: 'Spectrum Analyzer',
+            description: 'A simple spectrum analyzer built with C++, SFML, ImGui, and FFTW.',
             media: 'assets/videos/spectrum.mp4',
             type: 'video',
             link: 'https://github.com/isaigm/music-visualizer-sfml'
         },
         {
-            title: 'Implementación de algoritmo C4.5',
-            description: 'Este algoritmo lo implementé como parte del proceso de ingreso a la maestría en IA en la Universidad Veracruzana. También redacté un pequeño artículo en LaTeX al respecto.',
+            title: 'C4.5 Algorithm Implementation',
+            description: 'I implemented this algorithm as part of the admission process for the M.Sc. in AI at Universidad Veracruzana. I also wrote a short paper about it in LaTeX.',
             media: 'assets/images/c4_5.png',
             type: 'image',
             link: 'https://github.com/isaigm/decision-tree-from-scratch'
         },
         {
-            title: 'Symptom checker',
-            description: 'Una página web donde el usuario puede seleccionar distintos síntomas y el sistema predice las tres enfermades más probables que podría tener. El propósito de este proyecto era aprender cómo desplegar modelos de ML a producción.',
+            title: 'Symptom Checker',
+            description: 'A web application where the user can select different symptoms, and the system predicts the three most likely diseases they might have. The purpose of this project was to learn how to deploy ML models to production.',
             media: 'assets/images/symptom-checker.png',
             type: 'image',
             link: 'https://github.com/isaigm/symptom-checker'
         },
         {
-        title: 'Clasificación de Cicatrices de Acné: Un Estudio de Validación Rigurosa',
-        description: 'Este proyecto inició como un estudio de replicación del paper "ScarNet". Tras identificar desafíos de reproducibilidad, desarrollé una solución superior con Transfer Learning (ResNet18). Para obtener una medida de rendimiento robusta y eliminar el sesgo de una "división afortunada", implementé Validación Cruzada (K-Fold), alcanzando una precisión promedio final de 64.4% ± 5.85%. Este resultado representa una evaluación honesta y científicamente rigurosa del rendimiento del modelo en un dataset limitado y complejo.',
-        media: 'assets/images/scarnet.jpeg',
-        type: 'image',
-        link: 'https://github.com/isaigm/scarnet'
+            title: 'Acne Scar Classification: A Rigorous Validation Study',
+            description: 'This project began as a replication study of the "ScarNet" paper. After identifying reproducibility challenges, I developed a superior solution with Transfer Learning (ResNet18). To obtain a robust performance measure and eliminate the bias of a "lucky split," I implemented K-Fold Cross-Validation, achieving a final average accuracy of 64.4% ± 5.85%. This result represents an honest and scientifically rigorous evaluation of the model\'s performance on a limited and complex dataset.',
+            media: 'assets/images/scarnet.jpeg',
+            type: 'image',
+            link: 'https://github.com/isaigm/scarnet'
         },
         {
-            title: 'Implementación del paper CrimeKGQA: A Crime Investigation System Based on Retrieval-Augmented Generation and Knowledge Graphs',
-            description: 'Repliqué completamente el sistema descrito en el artículo, reemplazando GPT-4o por Claude 3.7 como el modelo de lenguaje principal. Combiné RAG y grafos de conocimiento para responder preguntas complejas sobre crímenes cometidos en Manchester.',
+            title: 'Implementation of the paper "CrimeKGQA: A Crime Investigation System..."',
+            description: 'I fully replicated the system described in the paper, replacing GPT-4o with Claude 3.7 as the main language model. I combined RAG and knowledge graphs to answer complex questions about crimes committed in Manchester.',
             media: 'assets/videos/demo.mp4',
             type: 'video',
             link: 'https://github.com/isaigm/CrimeKGQA'
 
         },
         {
-            title: 'Implementación del paper Imaging time-series to improve classification and imputation',
-            description: 'Se reprodujo el enfoque del artículo utilizando el conjunto de datos GunPoint. Se convirtieron las series temporales en imágenes utilizando Gramian Angular Summation Field (GASF), y luego se entrenaron redes neuronales convolucionales (CNN) para la clasificación. El objetivo es determinar si la persona está apuntando con un arma o solo con su dedo.',
+            title: 'Implementation of the paper "Imaging time-series to improve classification and imputation"',
+            description: 'The paper\'s approach was reproduced using the GunPoint dataset. Time series were converted into images using Gramian Angular Summation Field (GASF), and then Convolutional Neural Networks (CNNs) were trained for classification. The goal is to determine if the person is pointing a gun or just their finger.',
             media: 'assets/images/GunPoint.png',
             type: 'image',
             link: 'https://github.com/isaigm/time-series-classifier'
 
         },
         {
-            title: "Implementación del paper Rediscovering orbital mechanics with machine learning",
-            description: "Repliqué con asistencia de Gemini 2.5 Pro el paper escrito por Lemos, Jeffrey, Cranmer et al, usando datos sintéticos generados a partir de una simulación. El objetivo del paper era deducir la ley de gravitación universal de Newton. Más detalles en el repositorio de github.",
+            title: "Implementation of the paper 'Rediscovering orbital mechanics with machine learning'",
+            description: "With the assistance of Gemini 2.5 Pro, I replicated the paper by Lemos, Jeffrey, Cranmer et al., using synthetic data generated from a simulation. The paper's goal was to deduce Newton's law of universal gravitation. More details in the GitHub repository.",
             media: "assets/images/imagen1_comparacion_orbitas.png",
             type: "image",
             link: "https://github.com/isaigm/rediscovering-orbital-mechanics-with-ml"
         },
         {
-            title: 'Emulador Chip-8 en C++',
-            description: 'Desarrollo de un emulador de Chip-8 en C++ utilizando la librería SFML para la gestión de gráficos y entrada. Este proyecto abarca la implementación completa de la arquitectura Chip-8, incluyendo el procesamiento de opcodes, manejo de memoria, registros y la sincronización precisa de la CPU y los temporizadores para una emulación fiel. Se abordaron desafíos clave como la optimización del rendimiento para evitar la ejecución excesivamente rápida o lenta, y la gestión de la entrada del usuario. Adicionalmente, se exploró un prototipo para Raspberry Pi Pico, demostrando adaptabilidad adiferentes plataformas.',
+            title: 'Chip-8 Emulator in C++',
+            description: 'Development of a Chip-8 emulator in C++ using the SFML library for graphics and input management. This project covers the full implementation of the Chip-8 architecture, including opcode processing, memory and register handling, and precise CPU and timer synchronization for a faithful emulation. Key challenges such as performance tuning to avoid running too fast or slow and managing user input were addressed. Additionally, a prototype for the Raspberry Pi Pico was explored, demonstrating adaptability to different platforms.',
             media: 'assets/images/chip8.png',
             type: 'image',
             link: 'https://github.com/isaigm/chip8-pi-pico'
 
         },
         {
-            title: 'Emulador Intel 8080 en C++',
-            description: 'Desarrollo de un emulador del Intel 8080 en C++. Este proyecto fue más complicado que el Chip-8, ya que el Intel 8080 fue un procesador real, tiene muchas más instrucciones, más memoria RAM, más registros, etc.',
+            title: 'Intel 8080 Emulator in C++',
+            description: 'Development of an Intel 8080 emulator in C++. This project was more complex than the Chip-8, as the Intel 8080 was a real processor with many more instructions, more RAM, more registers, etc.',
             media: 'assets/videos/i8080.mp4',
             type: 'video',
             link: 'https://github.com/isaigm/8080_emu'
 
         },
     ];
+
+       
 
     const projectsGrid = document.getElementById('proyectos');
 
