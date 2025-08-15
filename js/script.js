@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="project-card-content">
                 <h3>${project.title}</h3>
                 <p>${project.description}</p>
-                <a href="${project.link}" target="_blank">Ver proyecto</a>
+                <a href="${project.link}" target="_blank">View repository</a>
             </div>
         `;
         projectsGrid.appendChild(projectCard);
